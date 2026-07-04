@@ -22,7 +22,7 @@ export default function DetectionGauge({ aiScore, humanScore, confidence, risk }
 
   return (
     <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm">
-      <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-6">Skor Probabilitas Utama</h3>
+      <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-6">Skor Probabilitas AI</h3>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
         {/* Gauge Chart Bulat */}
@@ -64,7 +64,7 @@ export default function DetectionGauge({ aiScore, humanScore, confidence, risk }
           </div>
 
           <div className="flex justify-between items-center">
-            <span className="text-xs text-slate-500 font-medium">Tingkat Risiko</span>
+            <span className="text-xs text-slate-500 font-medium">Indikasi AI</span>
             <span className={`text-xs px-2.5 py-1 rounded-full border font-bold ${getRiskBadge(risk)}`}>
               {risk}
             </span>
